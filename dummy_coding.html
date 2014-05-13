@@ -183,7 +183,7 @@ hljs.initHighlightingOnLoad();
 
 <h2>Stat 2*** </h2>
 
-<p>Using the Turkeys dataset</p>
+<p>Using the Turkeys data set</p>
 
 <pre><code class="r">turk &lt;- read.csv(file = &quot;C:\\Users\\Aaron\\Documents\\Datasets\\Turkeys.csv&quot;, 
     header = T)
@@ -202,8 +202,8 @@ head(turk)
 <pre><code class="r">attach(turk)
 </code></pre>
 
-<p>There are 3 levels within Origin,<br/>
-therefore we must set one as a reference and the other 2 as dummy coded variables.<br/>
+<p>There are <strong>3</strong> levels within Origin,<br/>
+therefore we must set <strong>1</strong> as a reference and the other <strong>2</strong> as dummy coded variables.<br/>
 The variable we select as the reference is arbitrary.</p>
 
 <p>To do this we will use the <strong>ifelse</strong> statement </p>
@@ -221,7 +221,7 @@ The second number is our <em>Otherwise</em> statement, <strong>0</strong> .</p>
 Z2X &lt;- Z2 * Age
 </code></pre>
 
-<p>A new dataframe can now be made which includes the dummy coded variables.</p>
+<p>A new data frame can now be made which includes the dummy coded variables.</p>
 
 <pre><code class="r">turk2 &lt;- data.frame(turk, Z1, Z2, Z1X, Z2X)
 turk2

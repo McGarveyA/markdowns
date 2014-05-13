@@ -2,7 +2,7 @@ Dummy Coding Categorical Data
 ========================================================
 Stat 2*** 
 ---------------------------------------------------------
-Using the Turkeys dataset
+Using the Turkeys data set
 ### 
 
 
@@ -27,8 +27,8 @@ attach(turk)
 ```
 
 
-There are 3 levels within Origin,   
-therefore we must set one as a reference and the other 2 as dummy coded variables.  
+There are **3** levels within Origin,   
+therefore we must set **1** as a reference and the other **2** as dummy coded variables.  
 The variable we select as the reference is arbitrary.
 ### 
 To do this we will use the **ifelse** statement 
@@ -52,7 +52,7 @@ Z2X <- Z2 * Age
 ```
 
 
-A new dataframe can now be made which includes the dummy coded variables.
+A new data frame can now be made which includes the dummy coded variables.
 ### 
 
 
