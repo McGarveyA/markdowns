@@ -26,13 +26,14 @@ head(turk)
 attach(turk)
 ```
 
-
+*read.csv(file.choose(),header=T)* can be used to select the file manually.
+### 
 * There are **3** levels within Origin,   
 therefore we must set **1** as a reference and the other **2** as dummy coded variables.  
 * The variable we select as the reference is arbitrary.
 
 To do this we will use the **ifelse** statement 
-
+### 
 
 ```r
 Z1 <- ifelse(Origin == "V", 1, 0)  ## Notice that TWO equals signs must be used
