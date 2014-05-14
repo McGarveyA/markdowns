@@ -11,19 +11,19 @@ head(turk)
 attach(turk)
 ```
 
-There are **3** levels within Origin,   
+* There are **3** levels within Origin,   
 therefore we must set **1** as a reference and the other **2** as dummy coded variables.  
-The variable we select as the reference is arbitrary.
-### 
+* The variable we select as the reference is arbitrary.
+
 To do this we will use the **ifelse** statement 
-#### 
+
 ```{r}
 Z1 <- ifelse(Origin=="V",1,0)    ## Notice that TWO equals signs must be used
 Z2 <- ifelse(Origin=="W",1,0)    
 ```
-The first number is what the level of Origin will be equal to *if* it's *true*, **1**.  
-The second number is our *Otherwise* statement, **0** .
-### 
+* The first number is what the level of Origin will be equal to *if* it's *true*, **1**.  
+* The second number is our *Otherwise* statement, **0** .
+
 
 Creating the interactions of Age with the dummy coded variables 
 #### 

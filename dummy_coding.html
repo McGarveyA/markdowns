@@ -202,9 +202,11 @@ head(turk)
 <pre><code class="r">attach(turk)
 </code></pre>
 
-<p>There are <strong>3</strong> levels within Origin,<br/>
-therefore we must set <strong>1</strong> as a reference and the other <strong>2</strong> as dummy coded variables.<br/>
-The variable we select as the reference is arbitrary.</p>
+<ul>
+<li>There are <strong>3</strong> levels within Origin,<br/>
+therefore we must set <strong>1</strong> as a reference and the other <strong>2</strong> as dummy coded variables.<br/></li>
+<li>The variable we select as the reference is arbitrary.</li>
+</ul>
 
 <p>To do this we will use the <strong>ifelse</strong> statement </p>
 
@@ -212,8 +214,10 @@ The variable we select as the reference is arbitrary.</p>
 Z2 &lt;- ifelse(Origin == &quot;W&quot;, 1, 0)
 </code></pre>
 
-<p>The first number is what the level of Origin will be equal to <em>if</em> it&#39;s <em>true</em>, <strong>1</strong>.<br/>
-The second number is our <em>Otherwise</em> statement, <strong>0</strong> .</p>
+<ul>
+<li>The first number is what the level of Origin will be equal to <em>if</em> it&#39;s <em>true</em>, <strong>1</strong>.<br/></li>
+<li>The second number is our <em>Otherwise</em> statement, <strong>0</strong> .</li>
+</ul>
 
 <p>Creating the interactions of Age with the dummy coded variables </p>
 
